@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'opulent/sinatra/version'
+require 'opulent/rails/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "opulent-sinatra"
-  spec.version       = Opulent::Sinatra::VERSION
+  spec.name          = "opulent-rails"
+  spec.version       = Opulent::Rails::VERSION
   spec.authors       = ["Alex Grozav"]
   spec.email         = ["alex@grozav.com"]
 

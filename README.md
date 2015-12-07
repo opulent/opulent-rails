@@ -1,4 +1,4 @@
-# Opulent::Sinatra
+# Opulent::Rails
 
 Opulent is an Intelligent Web Templating Engine created for extremely fast and efficient Web Development. Based on the idea of lightweight and reusable Web Components, Opulent greatly increases your development speed for any project.
 
@@ -11,7 +11,7 @@ Opulent has a beautiful, minimalistic syntax: no tags, indentation based, option
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'opulent-sinatra'
+gem 'opulent-rails'
 ```
 
 And then execute:
@@ -20,13 +20,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install opulent-sinatra
+    $ gem install opulent-rails
 
 ## Usage
 
 First of all, create `layout.op` and `index.op` inside of your views folder.
 
-Render your views with Opulent inside of Sinatra by simply using:
+Render your views with Opulent inside of Rails by simply using:
 
 ```ruby
 get '/' do
@@ -50,7 +50,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/opulent-sinatra/fork )
+1. Fork it ( https://github.com/[my-github-username]/opulent-rails/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
