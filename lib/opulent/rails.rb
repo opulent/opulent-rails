@@ -10,12 +10,8 @@ module Opulent
     class Railtie < ::Rails::Railtie
       config.app_generators.template_engine :opulent
 
-      config.before_initialize do
-        Haml::Template.options[:format] = :html5
-      end
-
-      initializer 'haml_rails.configure_template_digestor' do
-        # Configure cache digests to parse haml view templates
+      initializer 'opulent_rails.configure_template_digestor' do
+        # Configure cache digests to parse opulent view templates
         # when calculating cache keys for view fragments
 
         ActiveSupport.on_load(:action_view) do
@@ -51,10 +47,6 @@ module Opulent
             /\s*-#\s*(#{tag}):?\s*(.*)/
           end
         end
-      end
-
-      rake_tasks do
-        load 'tasks/erb2haml.rake'
       end
     end
   end
