@@ -1,7 +1,7 @@
 require 'opulent'
 require 'rails'
-require_relative 'opulent/rails/version'
-require_relative 'opulent/rails/railtie'
+require_relative 'rails/version'
+require_relative 'rails/railtie'
 
 module Opulent
   module Rails
